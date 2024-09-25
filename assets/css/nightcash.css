@@ -1,0 +1,1079 @@
+/* Estilos generales */
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: #000;
+  color: #ddd;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para la barra de navegación */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(10px);
+  border: 1px solid #333; /* Borde gris oscuro */
+  border-radius: 50px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 10px 30px;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ddd;
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0 30px;
+}
+
+.menu a {
+  color: #ddd;
+  text-transform: capitalize;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #fff;
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background-color: #e0e0e0;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+  border-radius: 3px;
+}
+
+.banner {
+  position: relative;
+  width: 840px;
+  height: 450px;
+  background-color: #000;
+  overflow: hidden;
+  margin: 120px auto 60px auto;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+/* Ajustes para quitar contornos y sombras en la sección de desarrollo */
+.desarrollo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; /* Asegura que el contenedor esté centrado horizontalmente */
+  padding: 0;
+  background-color: transparent; /* Fondo transparente */
+  max-width: 1200px; /* Ajusta el ancho máximo para que coincida con el diseño */
+}
+
+.grid-item {
+  text-align: center; /* Centra el texto */
+  background-color: transparent; /* Fondo transparente */
+  border: none; /* Sin borde */
+}
+
+.grid-item h2 {
+  font-size: 1.5rem;
+  color: #fff; /* Color de texto igual al botón "Agenda una reunión" */
+  border: none;
+  box-shadow: none;
+}
+
+.grid-item p.description {
+  font-size: 1rem;
+  color: #fff; /* Color de texto igual al botón "Agenda una reunión" */
+  margin: 20px auto; /* Centra el párrafo horizontalmente */
+  max-width: 600px; /* Ajusta el ancho máximo para un mejor control de la longitud */
+  line-height: 1.5; /* Mejora la legibilidad */
+}
+
+.vcl {
+  flex: 1;
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.video {
+  height: 500px;
+
+  @media (max-width: 768px){
+    height: 300px;
+  }
+}
+
+.vslnightcash {
+  width: 600px;
+  height: 337px;
+  border: 2px solid #444;
+  border-radius: 15px;
+  background-color: transparent; /* Fondo transparente */
+}
+
+.desarrollo .grid-item {
+  margin-bottom: 0;
+}
+
+.desarrollo .vcl {
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .desarrollo {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Estilos para la Sección de Características */
+.caracteristicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente el contenido */
+  justify-content: center; /* Alinea verticalmente en el centro */
+  margin: 20px auto; /* Añade margen superior e inferior y centra horizontalmente */
+  padding: 20px;
+  border-radius: 20px; /* Bordes más redondeados */
+  border: 1px solid #555; /* Contorno ligeramente más claro */
+  background-color: #111; /* Fondo gris mucho más oscuro */
+  max-width: 1200px; /* Ajusta el ancho máximo para que coincida con el de las secciones superiores */
+}
+
+
+/* Estilos para la sección de características */
+.features {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  align-items: center; /* Alinea los elementos verticalmente */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+.feat {
+  background-color: #222; /* Fondo más oscuro */
+  color: #ccc; /* Color del texto */
+  border-radius: 25px; /* Bordes redondeados más pronunciados */
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  max-width: 300px;
+  border: 2px solid #000; /* Línea de borde más oscura */
+  box-shadow: none;
+  position: relative; /* Para crear el efecto de medio círculo */
+  overflow: hidden; /* Para ocultar cualquier contenido que se desborde */
+}
+.feat img {
+  max-width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 15px; /* Bordes redondeados en las imágenes */
+}
+
+/* Efecto de medio círculo en cada esquina */
+.feat::before,
+.feat::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: #222; /* Fondo más oscuro */
+  border: 2px solid #000; /* Línea de borde más oscura */
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.feat::before {
+  top: -30px;
+  left: -30px;
+}
+
+.feat::after {
+  bottom: -30px;
+  right: -30px;
+}
+
+/* Alineación en forma de "V" */
+.features > .feat:nth-child(1),
+.features > .feat:nth-child(2),
+.features > .feat:nth-child(3) {
+  flex: 1 1 30%; /* Ajusta el tamaño de los elementos en la fila superior */
+  max-width: 300px; /* Ajusta el ancho máximo para la fila superior */
+}
+
+.features > .feat:nth-child(4),
+.features > .feat:nth-child(5) {
+  flex: 1 1 45%; /* Ajusta el tamaño de los elementos en la fila inferior */
+  max-width: 300px; /* Ajusta el ancho máximo para la fila inferior */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 998px) {
+  .features {
+    flex-direction: column; /* Coloca los elementos en una columna en pantallas pequeñas */
+    align-items: center; /* Centra los elementos horizontalmente */
+  }
+
+  .features > .feat {
+    margin: 10px 0; /* Ajusta el margen en pantallas pequeñas */
+    max-width: 100%; /* Asegura que los elementos ocupen todo el ancho disponible */
+  }
+}
+
+/* Estilo del botón de "Agenda una reunión" */
+.banner-btn {
+  display: inline-block; /* Hace que el botón tome solo el espacio necesario */
+  background-color: #333; /* Fondo oscuro */
+  color: #ddd; /* Texto gris claro */
+  font-size: 1.5rem; /* Tamaño de fuente más grande */
+  font-weight: bold; /* Negrita */
+  padding: 15px 30px; /* Espaciado interno más amplio */
+  border: none; /* Sin borde */
+  border-radius: 50px; /* Bordes totalmente redondeados */
+  text-transform: uppercase; /* Texto en mayúsculas */
+  text-decoration: none; /* Sin subrayado */
+  text-align: center; /* Texto centrado */
+  transition: background-color 0.3s, color 0.3s; /* Transición suave para el cambio de color */
+  margin-top: 30px; /* Espacio arriba del botón */
+}
+
+.banner-btn:hover {
+  background-color: #444; /* Fondo ligeramente más claro en hover */
+  color: #fff; /* Texto blanco en hover */
+}
+
+/* Asegurar que el botón esté centrado */
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido horizontalmente */
+  background-color: transparent; /* Fondo transparente */
+}
+
+/* Estilos Responsivos */
+@media (max-width: 998px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .menu ul {
+    width: 100%;
+  }
+
+  .menu li {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Estilo para el contenedor del título */
+.titulo-container {
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Opcional: alinea el contenido verticalmente */
+  margin: 20px auto; /* Ajusta el margen según sea necesario */
+  text-align: center; /* Asegura que el texto dentro esté centrado */
+}
+
+.titulo {
+  font-size: 2rem;
+  color: #fff; /* Ajusta el color según sea necesario */
+  margin: 0; /* Elimina márgenes predeterminados si es necesario */
+}
+
+/* Ejemplo de uso */
+.titulo-container {
+  /* Asegúrate de que el contenedor tenga un ancho adecuado */
+  max-width: 1200px;
+}
+
+/* Estilos adicionales para la sección de características en base al nuevo diseño */
+.features2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra horizontalmente */
+  list-style: none;
+  padding: 20px;
+  margin: 0 auto; /* Añade margen auto para centrar horizontalmente */
+}
+
+.feat2 {
+  flex: 1 1 calc(20% - 20px); /* Ajusta el porcentaje según el diseño */
+  margin: 10px;
+  background-color: transparent; /* Fondo transparente */
+  border: none; /* Sin borde */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #ddd; /* Color del texto */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.feat2 h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feat2 p {
+  font-size: 1rem;
+}
+
+.feat2:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más fuerte en hover */
+}
+
+/* Animaciones */
+.animate__fromRight {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate__fromLeft {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Modo oscuro */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode header {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dark-mode .menu a {
+  color: #e0e0e0;
+}
+
+.dark-mode .menu a:hover {
+  color: #fff;
+}
+
+.dark-mode .banner-btn {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-mode .banner-btn:hover {
+  background-color: #555;
+}
+
+/* Estilos para la sección de caso de estudio */
+.case-study {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto; /* Margen superior e inferior */
+  padding: 30px;
+  max-width: 1200px; /* Ancho máximo para coincidir con otras secciones */
+  background-color: #111; /* Fondo oscuro */
+  border-radius: 20px; /* Bordes redondeados */
+  border: 1px solid #333; /* Borde más claro para destacar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+}
+/* Título de la sección */
+.case-study h3 {
+  font-size: 2rem;
+  color: #fff; /* Texto blanco */
+  margin-bottom: 20px; /* Espacio debajo del título */
+  text-align: center;
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Descripción del caso de estudio */
+.case-study-description {
+  font-size: 1rem;
+  color: #ddd; /* Texto gris claro */
+  margin-bottom: 20px; /* Espacio debajo de cada párrafo */
+  line-height: 1.6; /* Espaciado entre líneas para mejorar legibilidad */
+  text-align: center; /* Texto centrado */
+  max-width: 800px; /* Limita el ancho de los párrafos para mejorar la legibilidad */
+}
+
+/* Animación de entrada */
+.case-study-description.animate__fadeIn {
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards; /* Animación de desvanecimiento */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Desplazamiento inicial */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Posición final */
+  }
+}
+/* Estilos para el contenedor de ejemplos */
+.example-container {
+  display: flex; /* Alinea los elementos en una fila */
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 20px; /* Espacio entre los elementos */
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una fila */
+  padding: 20px; /* Espaciado interno */
+  max-width: 1200px; /* Ancho máximo para el contenedor */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+.example-item {
+  flex: 1 1 30%; /* Ajusta el tamaño de los elementos dentro del contenedor */
+  max-width: 400px; /* Ancho máximo para cada ítem */
+  margin: 10px; /* Espacio alrededor de cada ítem */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+  text-align: center; /* Centra el contenido dentro del ítem */
+}
+
+.example-item img {
+  width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor del ítem */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border: none; /* Elimina cualquier borde */
+  border-radius: 15px; /* Bordes redondeados */
+}
+
+.example-item h4 {
+  margin: 10px 0; /* Margen arriba y abajo para el título */
+  color: #fff; /* Color del texto del título */
+}
+
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 998px) {
+  /* Ajusta la barra de navegación para dispositivos móviles */
+  .header {
+    width: 100%; /* Asegura que ocupe el 100% del ancho del contenedor */
+    padding: 10px 20px; /* Reduce el padding para pantallas pequeñas */
+    flex-direction: row; /* Alinea los elementos en una fila */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+  }
+
+  /* Asegúrate de que el logo esté al lado del menú hamburguesa */
+  .logo {
+    margin-right: 0px; /* Añade margen derecho al logo para separarlo del menú hamburguesa */
+    padding-top: 10px;
+  }
+
+  /* Muestra el menú hamburguesa en pantallas pequeñas */
+  .hamburger {
+
+    display: flex; /* Muestra el botón de menú hamburguesa */
+    justify-content: center; /* Centra el menú hamburguesa */
+    margin-left: 20px; /* Alinea a la derecha en la barra de navegación */
+    z-index: 1001;
+  }
+  .hamburger span {
+    background-color: #e0e0e0;
+  }
+
+  .menu.show {
+    display: flex; /* Muestra el menú cuando está activado */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Ajusta según la altura del header */
+    right: 20px; /* Alinea el menú a la derecha */
+    background-color: #000;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 200px; /* Ajusta el ancho según necesites */
+  }
+
+
+
+  /* Asegúrate de que el menú esté oculto inicialmente en pantallas pequeñas */
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center; /* Centra el menú horizontalmente */
+  }
+
+  /* Muestra el menú cuando esté activo */
+  .menu.active {
+    display: flex;
+  }
+
+  /* Alinea los elementos del menú verticalmente y centra el texto */
+  .menu ul {
+    flex-direction: column; /* Alinea los elementos del menú verticalmente */
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+}
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 768px) {
+  /* Ajusta los márgenes para la sección de desarrollo */
+  .desarrollo {
+    padding: 0px 10px; /* Añade espaciado interno para mejorar la separación */
+    margin: 0px auto; /* Añade márgenes superior e inferior para separar la sección de otros elementos */
+  }
+
+  /* Ajusta el margen del contenedor de texto */
+  .desarrollo .titulo-container {
+    margin: 20px 0; /* Añade margen vertical para separar el título del contenido */
+  }
+
+  .desarrollo .case-study-description {
+    margin: 20px 0; /* Añade margen vertical para separar la descripción del contenido adicional */
+    padding: 0 10px; /* Añade padding horizontal para que el texto no toque los bordes en pantallas pequeñas */
+  }
+
+  /* Ajusta el margen del video */
+  .desarrollo .vslnightcash {
+    margin: 20px 0; /* Añade margen vertical para separar el video de otros elementos */
+    max-width: 100%; /* Asegura que el video no exceda el ancho de la pantalla */
+    height: auto; /* Mantiene la proporción del video */
+    border: 2px solid #444; /* Mantiene el borde definido para el video */
+    border-radius: 15px; /* Mantiene los bordes redondeados para el video */
+  }
+}
+@media (max-width: 768px) {
+  #contact {
+    padding: 20px;
+  }
+
+  #contact h2 {
+    font-size: 1.5rem; /* Tamaño de fuente más pequeño en móviles */
+  }
+
+  #contact p {
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño en móviles */
+    max-width: 100%; /* Asegura que el párrafo ocupe todo el ancho disponible */
+  }
+
+  .calendly-inline-widget {
+    height: 500px; /* Ajusta la altura del widget en móviles */
+  }
+}
+
+/* Estilos para la sección de contacto */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto; /* Centra la sección horizontalmente */
+}
+
+/* Estilo del título de la sección */
+#contact h2 {
+  margin-bottom: 20px; /* Espacio debajo del título */
+  font-size: 2rem;
+}
+
+/* Estilo del párrafo en la sección de contacto */
+#contact p {
+  margin-bottom: 20px; /* Espacio debajo del párrafo */
+  font-size: 1rem;
+  color: #ddd;
+  max-width: 800px; /* Limita el ancho para mejorar la legibilidad */
+}
+
+/* Estilo del widget de Calendly (sin cambios) */
+.calendly-inline-widget {
+  width: 100%;
+  max-width: 100%; /* Ajusta el ancho máximo para pantallas grandes */
+  height: 100%; /* Altura del widget */
+}
+
+@media (max-width: 998px) {
+  /* Ajustes para el menú de navegación en móviles */
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+  }
+
+/* Estilos para la barra de navegación en dispositivos móviles */
+@media (max-width: 998px) {
+  /* Estilo general del header */
+  .header {
+    display: flex;
+    justify-content: space-between; /* Distribuye el contenido entre los extremos */
+    align-items: center; /* Alinea verticalmente el contenido */
+    background-color: #000; /* Línea negra */
+    padding: 10px 20px; /* Espaciado interno */
+    width: 100%; /* Ancho completo */
+    position: fixed; /* Fija la barra en la parte superior */
+    top: 0; /* Posición en la parte superior */
+    left: 0;
+    z-index: 1000; /* Asegura que la barra esté sobre el contenido */
+  }
+
+  /* Añadir margen superior al contenido para evitar que esté tapado por la barra */
+  body {
+    margin-top: 60px; /* Ajusta según la altura de la barra de navegación */
+  }
+
+  /* Estilo para el logo o texto 'nigcasht' */
+  .logo {
+    color: #fff; /* Texto blanco */
+    font-size: 1.5rem; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+  }
+
+  /* Estilo para el menú hamburguesa */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 10px; /* Reduce el margen derecho para acercarlo más al centro */
+  }
+
+  .hamburger span {
+    background-color: #fff; /* Color de las barras del menú hamburguesa */
+    height: 3px; /* Grosor de las barras */
+    width: 35px; /* Ancho de las barras */
+    margin: 4px 0; /* Espaciado entre las barras */
+    border-radius: 0; /* Hace las barras rectas */
+  }
+
+  /* Estilo para el menú desplegable */
+  .menu {
+    display: none; /* Oculta el menú por defecto */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Ajusta según la altura del header */
+    right: 20px; /* Alinea el menú a la derecha */
+    background-color: #000; /* Fondo negro */
+    border: 1px solid #333; /* Borde oscuro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    padding: 10px;
+    width: 200px; /* Ajusta el ancho según necesites */
+  }
+
+  /* Mostrar el menú cuando está activo */
+  .menu.active {
+    display: flex;
+  }
+
+  /* Estilo de los elementos del menú */
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .menu a {
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px;
+    display: block; /* Hace que el enlace ocupe todo el ancho */
+  }
+
+  .menu a:hover {
+    background-color: #333; /* Fondo al pasar el ratón */
+  }
+}
+
+
+  .logo {
+    margin-right: 10px;
+  }
+
+  /* Ajustes específicos para el banner en móviles */
+  .banner {
+    width: 100%;
+    height: auto; /* Ajusta la altura del banner en móviles */
+  }
+
+  .desarrollo .titulo-container {
+    margin: 20px 0;
+  }
+
+  .desarrollo .case-study-description {
+    margin: 20px 0;
+    padding: 0 10px;
+  }
+
+  /* Ajustes para el widget de Calendly en móviles */
+  .calendly-inline-widget {
+    height: 500px;
+  }
+
+  /* Ajustes para la sección de contacto en móviles */
+  #contact {
+    padding: 20px;
+  }
+
+  #contact h2 {
+    font-size: 1.5rem;
+  }
+
+  #contact p {
+    font-size: 0.9rem;
+  }
+
+  /* Ajustes para la sección de características en móviles */
+  .features {
+    flex-direction: column;
+  }
+
+  .features > .feat {
+    margin: 10px 0;
+    max-width: 100%;
+  }
+
+  .example-container {
+    flex-direction: column;
+  }
+
+  .example-item {
+    max-width: 100%;
+  }
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 998px) {
+  .container {
+    padding: 0 10px; /* Menos padding en móviles */
+    
+  }
+  #hamburger-menu {
+    margin-left: -10px; /* Ajusta el valor según sea necesario */
+  }
+  #nav-menu {
+    display: none; /* Oculta el menú por defecto */
+    position: absolute; /* Coloca el menú encima de otros elementos */
+    top: 60px; /* Ajusta según el espacio requerido */
+    left: 0; /* Alinea el menú al borde izquierdo */
+    width: 100%; /* Asegura que el menú ocupe todo el ancho */
+    background-color: #333; /* Color de fondo para el menú (mismo que la barra de navegación) */
+    color: #fff; /* Color del texto (mismo que la barra de navegación) */
+    flex-direction: column; /* Alinea las secciones verticalmente */
+    padding: 0; /* Elimina el padding */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Añade una sombra para el menú */
+  }
+
+  #nav-menu.active {
+    display: flex; /* Muestra el menú cuando está activo */
+  }
+
+  #nav-menu ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding de la lista */
+    margin: 0; /* Elimina el margin de la lista */
+  }
+
+  #nav-menu ul li {
+    border-bottom: 1px solid #444; /* Añade una línea divisoria entre los elementos con color similar al fondo */
+  }
+
+  #nav-menu ul li a {
+    display: block; /* Hace que los enlaces ocupen todo el ancho del elemento */
+    padding: 15px 20px; /* Añade padding a los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #fff; /* Color del texto de los enlaces (mismo que la barra de navegación) */
+    text-align: left;
+  }
+
+  #nav-menu ul li a:hover {
+    background-color: #555; /* Cambia el fondo del enlace al pasar el ratón a un color más claro para indicar interacción */
+  }
+
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+  }
+
+  .header, .hamburger, .menu {
+    border-radius: 0 !important; /* Asegúrate de que todos los bordes sean rectos */
+  }
+  .banner {
+    width: 100%;
+    height: auto; /* Ajusta la altura en móviles */
+  }
+
+  /* Otros ajustes específicos para móviles */
+  .desarrollo, .features, #contact {
+    padding: 20px 0;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .features > .feat, .example-container {
+    max-width: 100%;
+  }
+  @media (max-width: 768px) {
+    .navbar {
+      position: fixed; /* Fija la barra de navegación */
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      z-index: 1000;
+      border-radius: 0; /* Asegura que no haya bordes redondeados */
+    }
+  
+    .menu-button {
+      position: absolute;
+      top: 50%; 
+      right: 10px;
+      transform: translateY(-50%);
+      border-radius: 0;
+    }
+  
+/* Estilos del menú en dispositivos móviles */
+.menu {
+  display: none; /* Oculta el menú por defecto */
+  flex-direction: column; /* Alinea los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  position: absolute; /* Coloca el menú sobre otros elementos */
+  top: 60px; /* Ajusta la posición según la altura del header */
+  left: 0;
+  width: 100%; /* Asegura que el menú ocupe todo el ancho */
+  background-color: #000; /* Color de fondo para el menú */
+  border: 1px solid #333; /* Borde para el menú */
+  border-radius: 0; /* Sin bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para el menú */
+  padding: 10px;
+}
+
+/* Muestra el menú cuando está activo */
+.menu.active {
+  display: flex;
+}
+
+/* Alinea los elementos del menú */
+.menu ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el padding de la lista */
+  margin: 0; /* Elimina el margin de la lista */
+  width: 100%; /* Asegura que la lista ocupe todo el ancho */
+  text-align: center; /* Centra el texto en la lista */
+}
+
+.menu ul li {
+  margin: 10px 0; /* Espacio entre los elementos de la lista */
+}
+
+.menu ul li a {
+  display: block; /* Hace que los enlaces ocupen todo el ancho del elemento */
+  padding: 15px 20px; /* Añade padding a los enlaces */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
+  color: #fff; /* Color del texto de los enlaces */
+}
+
+.menu ul li a:hover {
+  background-color: #555; /* Cambia el fondo del enlace al pasar el ratón */
+}
+
+  }
+
+/* Alinea las tres líneas del menú hamburguesa */
+.navbar .menu-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente */
+    margin-right: 10px; /* Ajusta el margen si es necesario */
+}
+
+.navbar .menu-button div {
+    background-color: white; /* Cambia esto al color deseado */
+    height: 3px; /* Ajusta el grosor de las líneas */
+    width: 30px; /* Ajusta el ancho de las líneas */
+    margin: 5px 0; /* Espaciado entre las líneas */
+}
+
+/* Asegúrate de que el menú se muestre correctamente cuando esté activo */
+.navbar .menu.active {
+    display: block;
+}
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.carousel {
+  width: 90%;
+  max-width: 1200px;
+  margin: 50px auto; /* Centrar el carrusel */
+  overflow: hidden;
+  border-radius: 1em;
+  box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.2);
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 0px;
+  }
+}
+
+.carrousel, .carrousel2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrar contenido */
+}
+
+.grande, .grande2 {
+  display: flex;
+  transition: opacity 0.4s ease;
+}
+
+.grande .img, .grande2 .img {
+  width: 100%; /* Ajustar al 100% */
+  min-height: 30vh; /* Altura mínima */
+  object-fit: cover; /* Mantiene proporción */
+  display: none; /* Ocultar imágenes inicialmente */
+}
+
+.grande .img.active, .grande2 .img.active {
+  display: block; /* Solo muestra la imagen activa */
+}
+
+.puntos, .puntos2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  padding: 0;
+  list-style: none;
+}
+
+.punto, .punto2 {
+  width: 1em;
+  height: 1em;
+  margin: 0 0.5em;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.punto.active, .punto2.active {
+  background-color: lightblue;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 600px) {
+  .grande .img, .grande2 .img {
+      min-height: 20vh; /* Ajustar la altura mínima para pantallas pequeñas */
+  }
+
+  .punto, .punto2 {
+      width: 0.8em; /* Hacer los puntos un poco más pequeños */
+      height: 0.8em;
+  }
+}
